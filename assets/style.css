@@ -1,0 +1,189 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: Lato;
+}
+
+
+header {
+  background-image: url(./images/sad-kitchen.jpeg);
+  width: 100%;
+  height: 595px;
+  padding: 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.hOne {
+  font-family: Berkshire Swash;
+  font-size: 130px;
+  position: absolute;
+  top: 0px;
+  left: 15%;
+}
+
+
+.hTwo {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 310px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 2px black;
+}
+
+.hThree {
+  text-align: center;
+  font-size: 25px;
+}
+
+.gradient {
+  background-image: linear-gradient(#dad426, #ff930f);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  width: 200px;
+}
+
+/* button {
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+} */
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result-item {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  overflow: hidden;
+}
+
+.result-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.text-container h3 {
+  margin-top: 0;
+}
+
+.text-container p {
+  margin: 10px 0;
+}
+
+.text-container a {
+  display: block;
+  margin-top: 10px;
+}
+
+.src {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  display: contents;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.336);
+  text-decoration: underline; 
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    background-image: url(./images/sad-kitchen.jpeg);
+  }
+  .hOne {
+    font-size: 100px;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+  }
+  .hTwo {
+    color: white;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hOne {
+    font-family: Berkshire Swash;
+    font-size: 70px;
+    position: absolute;
+    top: 120px;
+    left: 10%;
+  }
+  .hTwo {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 5px black;
+  }
+}
